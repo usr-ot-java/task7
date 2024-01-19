@@ -1,3 +1,5 @@
+server-port: 8080
+
 accounts:
   - id: 1
     balance: 1000

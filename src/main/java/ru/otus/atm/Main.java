@@ -29,8 +29,6 @@ import java.util.*;
 
 @Slf4j
 public class Main {
-    private static final int port = 8080;
-
     @SuppressWarnings("unchecked")
     public static void main(String[] args) throws Exception {
         Map<String, Object> props;
@@ -74,6 +72,7 @@ public class Main {
         AccountService accountService = new AccountService(cardNumberToHashPin,
                 accountRepository, passwordValidator, atm);
 
+        int port = (Integer) props.get("server-port");
 
         Server server = new Server(port);
         ServletContextHandler servletContextHandler = new ServletContextHandler(server, "/api");
