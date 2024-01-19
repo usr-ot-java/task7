@@ -11,4 +11,13 @@ public enum Denomination {
         this.val = val;
     }
 
+    public static Denomination getByVal(int val) {
+        Denomination[] denominations = Denomination.values();
+        for (int i = 0; i < denominations.length; i++) {
+            if (denominations[i].val == val) {
+                return denominations[i];
+            }
+        }
+        return null;
+    }
 }

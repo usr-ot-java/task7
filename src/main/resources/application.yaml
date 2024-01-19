@@ -1,0 +1,22 @@
+accounts:
+  - id: 1
+    balance: 1000
+    cardNumber: "1234123412341234"
+    pinCode: "1234"
+  - id: 2
+    balance: 2000
+    cardNumber: "1235123512351235"
+    pinCode: "5555"
+
+atm:
+  cash-sections:
+    - value: 10
+      amount: 100
+    - value: 100
+      amount: 100
+    - value: 500
+      amount: 100
+    - value: 1000
+      amount: 100
+    - value: 5000
+      amount: 100
